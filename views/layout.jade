@@ -9,4 +9,6 @@ html
     script(src='/bower_components/lodash/lodash.min.js')
     script(src='/dist/all.js')
     script(type='text/javascript').
-      VanillaPlayer.#{ctrl}();
+      window.addEventListener('load', function() {
+        VanillaPlayer.#{ctrl}();
+      }, false);

@@ -16,6 +16,7 @@ body {
 
 video {
   width: 100%;
+  max-height: 500px;
   background-color: white;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
@@ -26,11 +27,23 @@ video {
   cursor: pointer;
 }
 
+.video-item img {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.selected .video-item img {
+  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.5);
+}
+
+.video-item img:hover {
+  box-shadow: 0 3px 10px rgba(0, 255, 0, 0.5);
+}
+
 .movie-description {
   padding-left: 20px;
 }
 
-.movie-description .category {
+.movie-description label {
   float: left;
 }
 

@@ -14,10 +14,10 @@
 
 				if (args && (method === 'POST' || method === 'PUT')) {
 					ajaxUri += '?';
-					var argcount = 0;
+					var count = 0;
 					for (var key in args) {
 						if (args.hasOwnProperty(key)) {
-							if (argcount++) {
+							if (count++) {
 								ajaxUri += '&';
 							}
 							ajaxUri += encodeURIComponent(key) + '=' + encodeURIComponent(args[key]);
