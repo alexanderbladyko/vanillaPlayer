@@ -1,0 +1,10 @@
+{
+  "name": "Vanilla Player",
+  "description": "Test project",
+  "version": "0.1.0",
+  "homepage": "https://github.com/alexanderbladyko/vanillaPlayer",
+  "private": false,
+  "dependencies": {
+    "lodash": "~3.9.3"
+  }
+}

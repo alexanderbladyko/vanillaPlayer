@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    block content
+
+    script(src='/bower_components/lodash/lodash.min.js')
+    script(src='/dist/all.js')
+    script(type='text/javascript').
+      VanillaPlayer.#{ctrl}();
